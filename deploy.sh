@@ -1,6 +1,6 @@
 docker build -t umeshbhat/multiclient:latest -t umeshbhat/multiclient:$SHA -f ./client/Dockerfile ./client
-docker build -t umeshbhat/multiserver:latest -t umeshbhat/multiserver:$SHA-f ./server/Dockerfile ./server
-docker build -t umeshbhat/multiworker:latest -t umeshbhat/multiworker:$SHA-f ./worker/Dockerfile ./worker
+docker build -t umeshbhat/multiserver:latest -t umeshbhat/multiserver:$SHA -f ./server/Dockerfile ./server
+docker build -t umeshbhat/multiworker:latest -t umeshbhat/multiworker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push umeshbhat/multiclient:latest
 docker push umeshbhat/multiserver:latest
